@@ -11,6 +11,10 @@ function mostrar()
 
     concatenado_nombre_edad = "Usted se llama " + nombre + " y tiene " + edad + " años "
 
+    /*
+    console.log(nombre);
+    console.log(edad);
+    */
     alert(concatenado_nombre_edad);
 }
 
