@@ -18,6 +18,9 @@ switch(mesDelAño){
     case "Diciembre":
         mensaje = "Felices fiestas!!!.";
         break;
+    default:
+        mensaje = "No hay un evento reconocido en este mes";
+        break;
 }
 
 // muestro mensaje
