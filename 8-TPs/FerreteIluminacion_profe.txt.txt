@@ -1,0 +1,76 @@
+function CalcularPrecio()
+{
+	var cantidadLamparas;
+	var precioLampara;
+	var marca;
+	var descuento;
+	var IngresoBruto;
+	var cartelIngresoBruto;
+	
+	cantidadLamparas = document.getElementById("Cantidad").value;
+
+	if(cantidadLamparas >= 6)
+	{
+		descuento= 0.5;
+	}
+	else
+	{	
+		if(cantidadLamparas == 5 && marca == "ArgentinaLuz" )
+		{
+			
+			descuento = 0.4;
+		}
+		else
+		{
+			descuento = 0.3;
+		}
+
+
+		if( (cantidadLamparas == 4 && marca == "ArgentinaLuz" ) || (cantidadLamparas == 4 && marca == "FelipeLamparas" )
+		{
+			
+			descuento = 0.25;
+		}
+		else
+		{
+			descuento = 0.20;
+		}
+
+
+		if(cantidadLamparas == 3 && marca == "ArgentinaLuz" )
+		{
+			
+			descuento = 0.15;
+		}
+
+		if(cantidadLamparas == 3 && marca == "ArgentinaLuz" )
+		{
+			
+			descuento = 0.10;
+		}
+		else
+		{
+			descuento = 0.05;
+		}
+		
+	}
+
+
+	precioLampara = 35 * cantidad;
+	precioLampara = precioLampara - ( precioLampara * descuento );
+
+	alert(precioLampara);
+
+	if( precioLampara > 120 )
+	{
+		IngresoBruto = precioLampara * 1.1;
+		cartelIngresoBruto = ”Usted pago " + IngresoBruto.toString() +" de IIBB., siendo 10% el impuesto que se pagó.";
+		alert(cartelIngresoBruto);
+		
+	}
+	
+	
+	
+
+
+}
