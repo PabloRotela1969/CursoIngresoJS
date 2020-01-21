@@ -5,11 +5,16 @@ function mostrar()
 	var acumulador=0;
 	var respuesta='si';
 	respuesta = prompt("Ingrese números, Igrese NO para terminar");
+	respuesta = respuesta.toUpperCase();
 	while(respuesta != "NO")
 	{
-		acumulador += parseInt(respuesta);
-		contador++;
-		respuesta = prompt("Ingrese números, Igrese NO para terminar");
+		if ( !isNaN(respuesta))
+		{
+			acumulador += parseInt(respuesta);
+			contador++;
+			respuesta = prompt("Ingrese números, Igrese NO para terminar");
+			respuesta = respuesta.toUpperCase();
+		}
 	}
 
 document.getElementById('suma').value=acumulador;

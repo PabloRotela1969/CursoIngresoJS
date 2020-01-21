@@ -7,10 +7,12 @@ function mostrar()
 	while ( contador < 5 )
 	{
 		acumulador = prompt("Ingrese un numero:");
-		acumulador = parseInt(acumulador);
-		subtotal += acumulador;
-		contador++;
-
+		if (!isNaN(acumulador))
+		{
+			acumulador = parseInt(acumulador);
+			subtotal += acumulador;
+			contador++;
+		}
 	}
 
 

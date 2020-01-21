@@ -2,8 +2,8 @@ function mostrar()
 {
 
     var sexo = prompt("ingrese f ó m .");
-    
-    while(!((sexo.toLocaleLowerCase() == 'f') || (sexo.toLocaleLowerCase() == 'm')))
+    sexo = sexo.toLocaleLowerCase();
+    while(!((sexo == 'f') || (sexo == 'm')))
     {
         sexo = prompt("ingrese f ó m .");
     }
