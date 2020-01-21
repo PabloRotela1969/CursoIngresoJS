@@ -14,13 +14,15 @@ function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
 	 
-		//alert(numeroSecreto );
-	
+    var min = 1;
+    var max = 101;
+    numeroSecreto = Math.floor(Math.random() * (max - min) + 1);
+    alert(numeroSecreto );
 
 }
 
 function verificar()
 {
-	
+  //desarrollar esto
 	
 }
