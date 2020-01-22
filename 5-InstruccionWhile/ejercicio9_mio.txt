@@ -1,12 +1,13 @@
+// ejercici 9
 function mostrar()
 {
 
-	var contador;
+	var contador=0;
 	// declarar variables
-	var maximo;
-	var minimo;
+	var maximo = 0;
+	var minimo = 0;
 	var respuesta='si';
-	respuesta = prompt("Ingrese un nÃºmero o pulse NO para terminar");
+	respuesta = prompt("Ingrese un número o pulse NO para terminar");
 	respuesta = respuesta.toLowerCase();
 	while(respuesta != "no")
 	{
@@ -20,21 +21,19 @@ function mostrar()
 				minimo = respuesta;
 				contador = 2;
 			}
-			else
-			{
 
-				if( respuesta > maximo)
-				{
-					maximo = respuesta;
-				}
-				
-				if(respuesta <= minimo )
-				{
-					minimo = respuesta;
-				}
+			if( respuesta > maximo)
+			{
+				maximo = respuesta;
 			}
+			
+			if(respuesta <= minimo )
+			{
+				minimo = respuesta;
+			}
+			
 		}
-		respuesta = prompt("Ingrese un nÃºmero o pulse NO para terminar");
+		respuesta = prompt("Ingrese un número o pulse NO para terminar");
 		respuesta = respuesta.toLowerCase();
 	}
 	document.getElementById("maximo").value = maximo;
@@ -42,4 +41,4 @@ function mostrar()
 
 
 
-}//FIN DE LA FUNCIÃ“N
+}//FIN DE LA FUNCIÓN

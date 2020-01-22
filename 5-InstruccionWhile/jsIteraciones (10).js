@@ -45,7 +45,7 @@ function mostrar()
 			}
 
 			par = respuesta % 2;// si esto da 0 o sea , no hay resto, es par
-			if ( 0 == par)
+			if ( respuesta != 0 && 0 == par )
 			{
 				cantidadPares++;
 			}
@@ -60,15 +60,15 @@ function mostrar()
 	}
 
 
-	alert( "La suma de los positivos " + Sumapositivos.toString() );
-	alert( "La suma de los negativos " +  Sumanegativos.toString() );
-	alert( "La cantidad de negativos " + cantidadNegativos.toString() );
-	alert( "La cantidad de positivos " +cantidadPosiivos.toString() );
-	alert( "La cantidad de ceros " +cantidadCeros.toString() );
-	alert( "La cantidad de pares " + cantidadPares.toString() );
-	alert( "El promedio de los positivos  " + promedioPositivos.toString() );
-	alert("El promedio de los negativos " +  promedioNegativos.toString() );
-	alert(" Diferencia entre negativos y positivos " + negativosMenosPositivos.toString() );
+	document.write( "La suma de los positivos " + Sumapositivos.toString() + "<br>" );
+	document.write( "La suma de los negativos " +  Sumanegativos.toString() + "<br>");
+	document.write( "La cantidad de negativos " + cantidadNegativos.toString() + "<br>");
+	document.write( "La cantidad de positivos " +cantidadPosiivos.toString() + "<br>");
+	document.write( "La cantidad de ceros " +cantidadCeros.toString() + "<br>");
+	document.write( "La cantidad de pares " + cantidadPares.toString() + "<br>");
+	document.write( "El promedio de los positivos  " + promedioPositivos.toString()+ "<br>" );
+	document.write( "El promedio de los negativos " +  promedioNegativos.toString() + "<br>");
+	document.write( "Diferencia entre negativos y positivos " + negativosMenosPositivos.toString() + "<br>");
 
 
 
