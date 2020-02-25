@@ -8,22 +8,46 @@ var eleccionMaquina;
 
 function comenzar()
 {
-	
-
+    var maximo = 4;
+    var minimo = 1;
+    eleccionMaquina = (Math.floor(Math.random() * (maximo - minimo) + minimo));
+    //alert(eleccionMaquina);
+    // NO ENTIENDO COMO SE PUEDE EMPATAR EN ESTE JUEGO
 
 }//FIN DE LA FUNCIÓN
 function piedra()
 {
-	
+    if(eleccionMaquina == 1)
+    {
+        alert("Ganó");
+    }
+    else
+    {
+        alert("Perdió");
+    }
 
 }//FIN DE LA FUNCIÓN
 function papel()
 {
-
+    if(eleccionMaquina == 2)
+    {
+        alert("Ganó");
+    }
+    else
+    {
+        alert("Perdió");
+    }
 
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
-	
+    if(eleccionMaquina == 3)
+    {
+        alert("Ganó");
+    }
+    else
+    {
+        alert("Perdió");
+    }	
 
 }//FIN DE LA FUNCIÓN
